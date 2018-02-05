@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'story/world_map.html')
+
+def home_page(request):
+    return HttpResponse('I am just adding a world map')
